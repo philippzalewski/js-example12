@@ -8,6 +8,11 @@
 	padding-bottom: 20px;
 }
 
+#js-newGameButton {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
 #resultsGameOver {
 	text-align: center;
 	margin: 0 auto;
