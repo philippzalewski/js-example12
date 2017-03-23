@@ -18,11 +18,13 @@ var gameState = 'notStarted',  //started // ended
     },
     computer = {
         score: 0
-    };
+    };	
 	
+
 	var newGameElem = document.getElementById('js-newGameElement'),
     pickElem = document.getElementById('js-playerPickElement'),
-    resultsElem = document.getElementById('js-resultsTableElement');
+    resultsElem = document.getElementById('js-resultsTableElement'),
+	displayGameOver = document.getElementById('resultsGameOver');
 	
 	function setGameElements() {
   switch(gameState) {
@@ -30,9 +32,12 @@ var gameState = 'notStarted',  //started // ended
         newGameElem.style.display = 'none';
         pickElem.style.display = 'block';
         resultsElem.style.display = 'block';
+		displayGameOver.innerText = '';
+		
       break;
     case 'ended':
         newGameBtn.innerText = 'Jeszcze raz';
+		
     case 'notStarted':
     default:
         newGameElem.style.display = 'block';
