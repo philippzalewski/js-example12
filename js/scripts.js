@@ -57,7 +57,8 @@ function newGame() {
     gameState = 'started';
     setGameElements();
 
-    playerNameElem.innerHTML = player.name;	    
+    playerNameElem.innerHTML = player.name;
+	setGamePoints();
 	
 	function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
