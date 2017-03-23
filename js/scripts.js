@@ -125,7 +125,7 @@ function checkRoundWinner(playerPick, computerPick) {
 	}	
 
 	else if (player.score == 10) {
-		displayGameOver.innerText = 'Gracz XXX zdobył 10 pkt i wygrał! Gratulujemy !!!';
+		displayGameOver.innerText = 'Gracz '+ player.name +' zdobył 10 pkt i wygrał! Gratulujemy !!!';
 		gameState = 'ended';
 		setGameElements();
 	}
